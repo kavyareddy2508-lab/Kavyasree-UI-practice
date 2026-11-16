@@ -1,0 +1,20 @@
+{
+  "httpMethod": "GET", "resource": "/v2/catalog",
+  "headers": {"X-Broker-API-Version": "2.17"},
+  "requestContext": {"identity": {"userArn": "arn:aws:sts::123456789012:assumed-role/test/me", "accountId": "123456789012"}}
+}
+
+{
+  "httpMethod": "PUT", "resource": "/v2/service_instances/{instance_id}",
+  "pathParameters": {"instance_id": "test-0001"},
+  "queryStringParameters": null,
+  "headers": {"X-Broker-API-Version": "2.17",
+              "X-Broker-API-Originating-Identity": "service-board eyJ1c2VyX2lkIjoiYWJjMTIzNCJ9"},
+  "body": "{\"service_id\":\"<SERVICE_ID>\",\"plan_id\":\"<PLAN_ID>\",\"context\":{\"project_id\":\"proj-test\"}}",
+  "requestContext": {"identity": {"userArn": "arn:aws:sts::123456789012:assumed-role/test/me", "accountId": "123456789012"}}
+}
+
+
+
+  "queryStringParameters": {"accepts_incomplete": "true"},
+
